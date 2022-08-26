@@ -2,7 +2,7 @@
 Models trained on dendrites imaged through 2p GRIN
  
 These are just models that can be used to segment out dendrites with [Cellpose](https://github.com/MouseLand/cellpose). 
-Training set is a collection of 30 manually labeled images that have undergone [local normalization](https://github.com/xzhang03/Local-normalize).
+Training set is a collection of 30 (A) or 119 (B) manually labeled images that have undergone [local normalization](https://github.com/xzhang03/Local-normalize).
 This repo documents progress in this regard. 
 
 Lens: NEM-050-25-10-860-DM
