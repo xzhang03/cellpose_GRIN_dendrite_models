@@ -19,10 +19,10 @@ Objective: NIKON CFI PLAN APO LAMBDA 4X OBJECTIVE
 >python -m cellpose --train --dir ~/cellpose/training_full --pretrained_model nuclei --diameter 10 --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.1 --weight_decay 0.0001 --n_epochs 100 --verbose
 1. [GRINDen_Nu100](https://github.com/xzhang03/cellpose_GRIN_dendrite_models/blob/main/sample_images/GRINDen_Nu100.png)
 2. [GRINDen_Nu100](https://github.com/xzhang03/cellpose_GRIN_dendrite_models/blob/main/sample_images/GRINDen_Nu100_axons.png)
-#### 500 Epochs
+#### 500 Epochs (trained with a 31-image training set A)
 >python -m cellpose --train --dir ~/cellpose/training_full --pretrained_model nuclei --diameter 10 --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.1 --weight_decay 0.0001 --n_epochs 500 --verbose
 1. [GRINDen_Nu500](https://github.com/xzhang03/cellpose_GRIN_dendrite_models/blob/main/sample_images/GRINDen_Nu500.png)
-#### 2000 Epochs
+#### 2000 Epochs (further refined with a 119-image training set B)
 >python -m cellpose --train --dir ~/cellpose/training_full2 --pretrained_model nuclei --diameter 10 --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.1 --weight_decay 0.0001 --n_epochs 2000 --verbose
 1. [GRINDen_Nu2000](https://github.com/xzhang03/cellpose_GRIN_dendrite_models/blob/main/sample_images/GRINDen_Nu2000.png)
 2. [GRINDen_Nu2000](https://github.com/xzhang03/cellpose_GRIN_dendrite_models/blob/main/sample_images/GRINDen_Nu2000_axons.png)
