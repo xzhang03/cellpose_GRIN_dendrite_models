@@ -37,6 +37,14 @@ Objective: NIKON CFI PLAN APO LAMBDA 4X OBJECTIVE
 #### 2000 Epochs (further refined with a 119-image training set B)
 >python -m cellpose --train --dir ~/cellpose/training_full2 --pretrained_model cyto --diameter 10 --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.1 --weight_decay 0.0001 --n_epochs 2000 --verbose
 
+### 3. Brain-slice dendrite models
+#### SliceDen_Cy3000
+>python -m cellpose --train --dir ~/slice_dendrite_cellpose --pretrained_model cyto --diameter 10 --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.2 --weight_decay 0.0001 --n_epochs 3000 --verbose
+#### SliceDen_CTwo3000
+>python -m cellpose --train --dir ~/slice_dendrite_cellpose --pretrained_model cyto2 --diameter 10 --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.2 --weight_decay 0.0001 --n_epochs 3000 --verbose
+#### SliceDen_Cu3000
+>python -m cellpose --train --dir ~/slice_dendrite_cellpose --pretrained_model nuclei --diameter 10 --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.2 --weight_decay 0.0001 --n_epochs 3000 --verbose
+
 ### Retired 1. Model from scratch (retired)
 #### 100 Epochs (trained with a 31-image training set A)
 >python -m cellpose --train --dir ~/cellpose/training_full --pretrained_model None --mask_filter _seg.npy --chan 0 --chan2 0 --learning_rate 0.1 --weight_decay 0.0001 --n_epochs 100 --verbose
